@@ -21,7 +21,7 @@ export class VideoUploadComponent implements OnInit {
 
   uploadVideo() {
     this.fileSend.send(this.uploadedFiles).subscribe((response) => {
-      console.log('response received is ', response);
+      console.log('video uploaded');
     })
   }
 
