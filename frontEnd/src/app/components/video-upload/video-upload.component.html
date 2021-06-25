@@ -7,7 +7,7 @@
             <input type="file" name="video" ngModel>
             <button type="submit">Submit</button>
         </form> -->
-        <input #video type="file" (change)="fileChange($event)"/>
-        <button><span (click)="uploadVideo()">Upload</span></button>
+        <input type="file" class="form-control-file" id="exampleFormControlFile1" (change)="fileChange($event)">
+        <button mat-flat-button color="warn" (click)="uploadVideo()">Upload</button>
     </div>
 </div>
