@@ -3,10 +3,6 @@
 </div>
 <div class="row text-center">
     <div class="col-12">
-        <!-- <form #videoUpload="ngForm" (ngSubmit)="onUpload(videoUpload)">
-            <input type="file" name="video" ngModel>
-            <button type="submit">Submit</button>
-        </form> -->
         <input type="file" class="form-control-file" id="exampleFormControlFile1" (change)="fileChange($event)">
         <button mat-flat-button color="warn" (click)="uploadVideo()">Upload</button>
     </div>
