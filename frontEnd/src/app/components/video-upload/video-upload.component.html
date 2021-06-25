@@ -1,0 +1,13 @@
+<div class="row text-center">
+    <h1>Video Upload</h1>
+</div>
+<div class="row text-center">
+    <div class="col-12">
+        <!-- <form #videoUpload="ngForm" (ngSubmit)="onUpload(videoUpload)">
+            <input type="file" name="video" ngModel>
+            <button type="submit">Submit</button>
+        </form> -->
+        <input #video type="file" (change)="fileChange($event)"/>
+        <button><span (click)="uploadVideo()">Upload</span></button>
+    </div>
+</div>
